@@ -3,24 +3,25 @@ import java.util.Scanner;
 
 public class Float {
     public static void main(String[] args) {
-
         // Telling the system to truncate ( a function defined below ) a decimal
-        //Object 1
-        Scanner myObj = new Scanner(System.in);
-        System.out.println("Number 1: ");
-        String numberOne = myObj.nextLine();
 
+        //Scanner is looking for a keyboard input and it will record it as my OBJ
+        Scanner myObj = new Scanner(System.in);
+        //The system will output "Number 1:" And wait for a resonse
+        System.out.println("Number 1: ");
+        //Now the system will remember the number by inputting it to a string
+        String numberOne = myObj.nextLine();
+        //System will push the input through the truncateDecimal function below and output the number to 2 decimal places
         System.out.println(truncateDecimal(Double.parseDouble(numberOne), 2));
 
         Scanner myObj2 = new Scanner(System.in);
         System.out.println("Number 2: ");
         String numberTwo = myObj2.nextLine();
-
         System.out.println(truncateDecimal(Double.parseDouble(numberTwo), 2));
+
         Scanner myObj3 = new Scanner(System.in);
         System.out.println("Number 3: ");
         String numberThree = myObj3.nextLine();
-
         System.out.println(truncateDecimal(Double.parseDouble(numberThree), 2));
 
     }
