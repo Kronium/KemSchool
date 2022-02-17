@@ -2,22 +2,6 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Float {
-    /*
-      public static void main(String[] args) {
-          String line;
-          Scanner in = new Scanner(System.in);
-
-          System.out.print("Say a numbie: ");
-          line = in.nextLine();
-          System.out.println(line + "0");
-      }
-
-     */
-    //scanner
-
-    /*
-    first numbie
-     */
     public static void main(String[] args) {
 
         // Telling the system to truncate ( a function defined below ) a decimal
@@ -38,7 +22,6 @@ public class Float {
         String numberThree = myObj3.nextLine();
 
         System.out.println(truncateDecimal(Double.parseDouble(numberThree), 2));
-
 
     }
     //////////////////////////////////////////////
